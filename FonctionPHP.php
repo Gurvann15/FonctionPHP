@@ -12,15 +12,15 @@
 <form action="" method="GET">
 
 Largeur: <input type="text" name="largeur">
-Hauteur: <input type="text" name="hauteur">
+Longeur: <input type="text" name="longueur">
 <button>Valider</button>
 
 <?php
 
 function calculPerimetreRectangle(){
     $largeur = $_GET['largeur'];
-    $hauteur = $_GET['hauteur'];
-    $perimetre = 2 * ($largeur + $hauteur);
+    $longeur = $_GET['longeur'];
+    $perimetre = 2 * ($largeur + $longeur);
 
     return $perimetre;
 }
